@@ -1,4 +1,5 @@
-#include <iostream>
+// #include <iostream>
+//iostream header ka zarurat nai hai....isiliye comment kr diye hai
 #include <bits/stdc++.h>
 #include <time.h>
 
