@@ -1,4 +1,3 @@
-// #include <iostream>
 #include <bits/stdc++.h>
 #include <time.h>
 
@@ -9,7 +8,7 @@ int main()
     cout << "\n\n***EncDec***\n\nSelect the operation you want to perform :- \n1. Encryption\n2. Decryption\n\nInput : ";
     int n = 0;int i = 0;
     
-    do{
+    do{                                                                     //for taking specific input from the user and if not given asking for it again
         if(i!=0)cout << "\nInvalid input, Please enter again \n\nInput : ";
         cin >> n;
         i=1;
@@ -36,10 +35,10 @@ int main()
 
         srand(time(0)); // seeding rand() to increase the randomity
 
-        int key[5];
-        for (int i = 0; i < 5; i++)
+        int key[5];            
+        for (int i = 0; i < 5; i++)             
         {
-            key[i] = rand() % 127;
+            key[i] = rand() % 127;  
         }
 
         int ln = data.length();
@@ -49,7 +48,7 @@ int main()
             if (i == branch - 1 && ln%5 != 0)
             {
                 cng = 5 - ln % 5;
-                // if(cng==5)     //commited by avinav
+                // if(cng==5)   
                 // cng=0;
             }
             for (int j = 5 * i, k = 0; j < 5 * (i + 1) - cng; j++, k++)
