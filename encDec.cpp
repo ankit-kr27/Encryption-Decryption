@@ -28,8 +28,8 @@ int main()
         string data;
         cout << "\nEnter your data (to be encrypted) below :-\n";
 
-        std::cin.clear();
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+//         std::cin.clear();
+//         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
         getline(cin, data);
 
@@ -73,8 +73,8 @@ int main()
         cout << "\nYou've chose to decrypt your data \n\n";
         cout << "Put/Paste your encrypted data below :- \n\n";
 
-        std::cin.clear();
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+//         std::cin.clear();
+//         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
         getline(cin, _data);
 
